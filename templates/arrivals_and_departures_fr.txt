@@ -1,0 +1,10 @@
+{% if arrivals -%}
+Aujourd'hui, nous accueillons _ {{arrivals|join(', ')}}_.
+{% else %}
+Pas d'arrivé aujourd'hui :door:.
+{%- endif %}
+{% if departures -%}
+Ces colivers nous quittent mais nous les reverrons bientôt :smiling_face_with_tear: _ {{departures|join(', ')}}_.
+{% else %}
+Personne nous quitte aujourd'hui :relieved:.
+{%- endif %}
